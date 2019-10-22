@@ -17,6 +17,9 @@ public class Drawing extends Canvas {
     private Square square;
 
     public Drawing() {
+
+        setupFrame();
+        setupCanvas();
         Point var1 = new Point(200, 200);
         Color var2 = new Color(10035814);
         this.circle = new Circle(var1, var2, 100);
@@ -29,8 +32,6 @@ public class Drawing extends Canvas {
         Color c2 = new Color(10035814);
         this.square= new Square(p2,c2,100,100);
 
-        setupFrame();
-        setupCanvas();
     }
 
     private void setupCanvas() {
